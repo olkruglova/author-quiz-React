@@ -7,3 +7,8 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+/* describe ('when setting up testing', () => {
+  it ('should be failed', () => {
+    expected(1+1).toBe(3);
+  });
+}); */
