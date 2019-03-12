@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-.one-button {
+.one-button, .add-button{
   margin: 0 3%;
 }
 .row {
@@ -14,4 +14,14 @@
 .buttons {
   width: 50%;
   margin-left: 3%;
+}
+.link {
+  color: brown;
+}
+.link:hover {
+  color: brown;
+  text-decoration: none;
+}
+.clicky-btn {
+  width: 50px;
 }

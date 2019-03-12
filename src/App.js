@@ -2,14 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import _ from 'lodash';
 
-const AuthorQuiz = (props) => {
-    return (
-      <h2>Author Quiz</h2>
-    )
-  }
 
 const ClickyButtons = ({numberOfButtons, onSelection}) => {
-
   const makeButton = v =>
     <button className="btn btn-primary clicky-btn" key={v} id={v} onClick={event => onSelection(event.target.id)}>
       {v}
@@ -42,13 +36,10 @@ class App extends Component {
           <button className='btn btn-success one-button' onClick={this.increaseNumberOfClicks}>Clicked {this.state.clicks} times</button>
         </div>
         <hr />
-        <div className='row text-center example2'>
-          <AuthorQuiz />
-        </div>
-        <hr />
         <div>
           <ClickyButtons numberOfButtons={99} onSelection={alert}/>
         </div>
+        <hr />
       </div>
     )
   }
