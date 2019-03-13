@@ -10,7 +10,7 @@ import AddAuthorForm from './AddAuthorForm'
 import {shuffle, sample} from 'underscore';
 import * as serviceWorker from './serviceWorker';
 
-let model = {numberOfClicks: 0}
+/* let model = {numberOfClicks: 0} */
 
 let authors = [
     {
@@ -72,7 +72,7 @@ const onAnswerSelected = (answer) => {
 const Applic = () => {
     return (
         <div>
-            <App clicks={model.numberOfClicks} />
+            {/* <App clicks={model.numberOfClicks} /> */}
             <AuthorQuiz {...state}
             onAnswerSelected={onAnswerSelected}
             onContinue={() => {
